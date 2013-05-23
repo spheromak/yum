@@ -20,7 +20,7 @@
 # limitations under the License.
 
 yum_key node['yum']['epel']['key'] do
-  url  node['yum']['epel']['key_url']
+  url node['yum']['epel']['key_url']
   action :add
 end
 

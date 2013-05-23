@@ -17,6 +17,5 @@ platforms:
 suites:
 - name: test
   run_list:
-  - recipe[minitest-handler]
   - recipe[yum::test]
   attributes: {}
