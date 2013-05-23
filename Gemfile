@@ -23,6 +23,6 @@ group :test do
   gem 'win32-event', :require => false, :platform => [:mswin, :mingw]
   gem 'win32-mutex', :require => false, :platform => [:mswin, :mingw]
 end
-gem "test-kitchen", git: 'https://github.com/opscode/test-kitchen.git', branch: 'http_proxy', :group => :integration
-gem 'kitchen-vagrant', git: 'https://github.com/opscode/kitchen-vagrant.git', branch: 'master', :group => :integration
+gem "test-kitchen", ">= 1.0.0.alpha.7", :group => :integration
+gem 'kitchen-vagrant', ">= 0.10.0", :group => :integration
 gem 'chef', git: 'https://github.com/jonsmorrow/chef.git', branch: 'rm_mp_dir'
